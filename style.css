@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DayWise</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <div class="container">
+    <h1>DayWise</h1>
+    <div class="task-form">
+      <h2>Add New Task</h2>
+      <label>Description</label>
+      <input type="text" id="description" placeholder="Task description"/>
+      <label>Deadline</label>
+      <input type="text" id="deadline" placeholder="e.g., 5 PM today"/>
+      <label>Duration</label>
+      <input type="text" id="duration" placeholder="e.g., 30 minutes"/>
+      <button onclick="addTask()">Add Task <span>+</span></button>
+    </div>
+
+    <h2>Tasks for Today</h2>
+    <ul id="taskList"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
